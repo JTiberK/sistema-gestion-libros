@@ -188,3 +188,75 @@ python test_manual.py
     Requiere que el pwd contenga un carácter especial como @, #, etc.
 
     Luego llama a super().autenticar(pwd) para validar base.
+
+
+## 🛠️ PASOS DETALLADOS
+
+### 🔢 1. Crear la clase base Usuario
+
+    🧱 Archivo: backend/models/usuario.py
+
+```bash
+class Usuario:
+    def __init__(self, username: str, password: str):
+        self.username = username
+        self._password = password
+
+    def autenticar(self, pwd: str) -> bool:
+        return self._password == pwd
+```
+
+    🔍 Esta clase:
+
+    Guarda el nombre y contraseña.
+
+    Usa un método autenticar() que compara la contraseña dada (pwd) con la almacenada (_password).
+
+    Este método es base, y será sobrescrito por subclases.
+
+### 🔢 2. Crear subclase Moderador(Usuario)
+
+```bash
+class Moderador(Usuario):
+    def autenticar(self, pwd: str) -> bool:
+        if not pwd.startswith("mod_"):
+            return False
+        return super().autenticar(pwd)
+```
+
+    🛡️ Reglas para Moderador:
+
+    La contraseña debe empezar con "mod_".
+
+    Luego se compara como lo haría un Usuario común usando super().autenticar(pwd).
+
+### 🔢 3. Crear subclase Admin(Usuario)
+
+```bash
+import re
+
+class Admin(Usuario):
+    def autenticar(self, pwd: str) -> bool:
+        if not re.search(r"[!@#$%^&*()_+]", pwd):
+            return False
+        return super().autenticar(pwd)
+```
+
+    ⚙️ Reglas para Admin:
+
+    La contraseña debe contener al menos un carácter especial (@, #, etc.).
+
+    Luego llama al método base autenticar para verificar que coincida exactamente.
+
+### 🔢 4. Crear la función polimórfica login()
+
+```bash
+def login(usuario: Usuario, pwd: str) -> bool:
+    return usuario.autenticar(pwd)
+```
+
+    🌀 Esto usa polimorfismo:
+
+    Acepta cualquier objeto que herede de Usuario.
+
+    Llama a su método autenticar(), que se comportará diferente según la subclase (Usuario, Moderador, Admin).
