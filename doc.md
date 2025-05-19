@@ -164,4 +164,28 @@ This code initializes a simple Flask web application with Cross-Origin Resource 
 ```bash
 cd backend
 python test_manual.py
+
+# En VS Code solo hay que pulsar ▶️
 ```
+<br>
+<br>
+<br>
+<br>
+
+# Fase 3 – Sistema de Autenticación
+
+## 🧠 Planificación
+    🧑‍💻 Usuario
+    username: público
+
+    _password: protegido
+
+    Método autenticar(pwd) → devuelve True si coincide con _password
+
+    🛡️ Moderador(Usuario)
+    Requiere que el pwd comience con "mod_" y coincida con _password.
+
+    🛠️ Admin(Usuario)
+    Requiere que el pwd contenga un carácter especial como @, #, etc.
+
+    Luego llama a super().autenticar(pwd) para validar base.
