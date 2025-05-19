@@ -158,3 +158,10 @@ This code initializes a simple Flask web application with Cross-Origin Resource 
     Buscar libros
 
     Registrar ventas
+
+### Ejecución
+
+```bash
+cd backend
+python test_manual.py
+```
