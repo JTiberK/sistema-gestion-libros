@@ -125,3 +125,23 @@ This code initializes a simple Flask web application with Cross-Origin Resource 
 <br>
 
 # Fase 2 – Clases y Encapsulación
+
+## 📘 Clase Libro (libro.py)
+    Privacidad y validaciones:
+
+    __titulo, __autor, __precio como atributos privados.
+
+    Getters y setters con @property.
+
+    Setter precio lanza ValueError si < 0.
+
+## 📚 Clase Inventario (inventario.py)
+    Gestión de libros en memoria:
+
+    Lista privada: _libros = []
+
+    agregar_libro(libro) agrega a lista.
+
+    buscar_libro(titulo) busca coincidencia exacta.
+
+    registrar_venta(titulo, cantidad) → simula venta o lanza error si no existe.
