@@ -308,3 +308,6 @@ python test_roles.py
 ### 🔢 5. Rutas de Libros – CRUD REST
         📄 backend/routes/libros.py
 
+### 🔢 6. Rutas de Login – roles dinámicos
+        📄 backend/routes/auth.py
+
