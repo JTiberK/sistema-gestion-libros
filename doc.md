@@ -305,3 +305,6 @@ python test_roles.py
 ### 🔢 4. Modelo LibroModel + sincronización con clase Libro
         📄 backend/models/libro.py
 
+### 🔢 5. Rutas de Libros – CRUD REST
+        📄 backend/routes/libros.py
+
