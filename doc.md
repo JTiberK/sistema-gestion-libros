@@ -81,8 +81,12 @@ Esto creará:
 - Un archivo `backend/app.py` que será el punto de entrada de la aplicación.
 - Un archivo `backend/config.py` para la configuración del proyecto.
 
+<br>
+<br>
+<br>
+<br>
 
-# Documentation
+# Documentation (⛏️ Flask Basic Start)
 
 ## Overview
 This code initializes a simple Flask web application with Cross-Origin Resource Sharing (CORS) enabled. It defines a single route (`/`) that serves as the home endpoint, returning a confirmation message when accessed.
@@ -114,3 +118,10 @@ This code initializes a simple Flask web application with Cross-Origin Resource 
 ## Notes
 - **CORS**: This setup is useful for APIs that need to be accessed from web applications hosted on different domains.
 - **Debug Mode**: The `debug=True` setting is intended for development purposes only and should not be used in production environments.
+
+<br>
+<br>
+<br>
+<br>
+
+# Fase 2 – Clases y Encapsulación
