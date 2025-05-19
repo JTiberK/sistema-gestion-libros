@@ -9,7 +9,7 @@ app.config.from_pyfile('config.py')
 db = SQLAlchemy(app)
 
 # Rutas
-from routes.libros import libros_bp
+from routes.libro import libros_bp
 from routes.auth import auth_bp
 app.register_blueprint(libros_bp)
 app.register_blueprint(auth_bp)
