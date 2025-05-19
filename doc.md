@@ -145,3 +145,16 @@ This code initializes a simple Flask web application with Cross-Origin Resource 
     buscar_libro(titulo) busca coincidencia exacta.
 
     registrar_venta(titulo, cantidad) → simula venta o lanza error si no existe.
+
+## 🧪 ¿Test manual?
+    Es un script de prueba temporal, un archivo .py donde simulás acciones reales del sistema:
+
+    Crear libros
+
+    Validar errores
+
+    Agregar al inventario
+
+    Buscar libros
+
+    Registrar ventas
