@@ -1,4 +1,6 @@
-# Comprobar si Python está instalado
+# Fase 1 - Preparación del entorno
+
+## Comprobar si Python está instalado
 
 Para verificar si tienes Python instalado en tu sistema, sigue estos pasos:
 
@@ -82,11 +84,8 @@ Esto creará:
 - Un archivo `backend/config.py` para la configuración del proyecto.
 
 <br>
-<br>
-<br>
-<br>
 
-# Documentation (⛏️ Flask Basic Start)
+## Documentation (⛏️ Flask Basic Start)
 
 ## Overview
 This code initializes a simple Flask web application with Cross-Origin Resource Sharing (CORS) enabled. It defines a single route (`/`) that serves as the home endpoint, returning a confirmation message when accessed.
