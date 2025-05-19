@@ -278,3 +278,26 @@ python test_roles.py
 <br>
 
 # Fase 4 – API REST con Flask + SQLAlchemy
+
+### 🔢 1. Instalar dependencias
+
+```bash
+    # Para Instalar
+    pip install Flask Flask-SQLAlchemy flask-cors 
+
+    # Para desinstalar
+    pip uninstall Flask Flask-SQLAlchemy flask-cors
+    ```
+```
+
+### 🔢 2. Configurar base de datos
+        📄 backend/config.py
+
+```bash
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///libros.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    Esto creará libros.db en la raíz de backend.
+```
+
+
+
