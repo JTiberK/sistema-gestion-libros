@@ -299,5 +299,7 @@ python test_roles.py
     Esto creará libros.db en la raíz de backend.
 ```
 
+### 🔢 3. Modificar app.py para levantar SQLAlchemy
+        📄 backend/app.py
 
 
