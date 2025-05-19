@@ -166,6 +166,7 @@ python test_manual.py
 
 # En VS Code solo hay que pulsar ▶️
 ```
+
 <br>
 <br>
 <br>
@@ -260,3 +261,20 @@ def login(usuario: Usuario, pwd: str) -> bool:
     Acepta cualquier objeto que herede de Usuario.
 
     Llama a su método autenticar(), que se comportará diferente según la subclase (Usuario, Moderador, Admin).
+
+
+### 🔢 5. tests manuales
+
+```bash
+cd backend
+python test_roles.py
+
+# En VS Code solo hay que pulsar ▶️
+```
+
+<br>
+<br>
+<br>
+<br>
+
+# Fase 4 – API REST con Flask + SQLAlchemy
