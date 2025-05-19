@@ -302,4 +302,6 @@ python test_roles.py
 ### 🔢 3. Modificar app.py para levantar SQLAlchemy
         📄 backend/app.py
 
+### 🔢 4. Modelo LibroModel + sincronización con clase Libro
+        📄 backend/models/libro.py
 
